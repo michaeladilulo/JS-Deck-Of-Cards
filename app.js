@@ -24,6 +24,7 @@ const card1 = drawDeck(myDeck);
 // refactor of function above with object 
 const myNewDeck = {
     deck: [],
+    drawnCards: [],
     suits: ['hearts', 'spades', 'diamonds', 'clubs'],
     values: '2,3,4,5,6,7,8,9,10,J,Q,K,A',
         initializeDeck() {
@@ -40,6 +41,8 @@ const myNewDeck = {
             }
         },
         drawSingleCard() {
-            return this.deck.pop();
+            const card = this.deck.pop();
+            this.drawnCards.push(card);
+            return card; 
         }
 }
