@@ -6,8 +6,8 @@ function makeDeck() {
     for(let value of values.split(',')) {
         for(let suit of suits) {
             deck.push({
-                value: value,
-                suit: suit
+                value,
+                suit
             })
         }
     }
