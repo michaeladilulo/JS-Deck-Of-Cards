@@ -44,5 +44,12 @@ const myNewDeck = {
             const card = this.deck.pop();
             this.drawnCards.push(card);
             return card; 
+        },
+        drawMultipleCards(numCards) {
+            const cards = [];
+            for(let i = 0; i < numCards.length; i++) {
+                this.drawCard(this.drawSingleCard());
+            }
+            return cards;
         }
 }
