@@ -58,11 +58,11 @@ const myNewDeck = {
         shuffle() {
             const {deck} = this;
                 // loop over array backwards
-            for(let i = arr.length - 1; i > 0; i--) {
+            for(let i = deck.length - 1; i > 0; i--) {
                 // pick random index before current element
             let j = Math.floor(Math.random() * (i + 1))
                 // shuffle
-            [arr[i], arr[j]] = [arr[j], [arr[i]]]
+            [deck[i], deck[j]] = [deck[j], [deck[i]]]
             console.log(arr);
         }
     }
