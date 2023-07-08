@@ -13,3 +13,10 @@ function makeDeck() {
     }
     return deck;
 }
+
+function drawCard(deck) {
+    return deck.pop();
+}
+
+const myDeck = makeDeck();
+const card1 = drawDeck(myDeck);
