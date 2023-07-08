@@ -38,5 +38,8 @@ const myNewDeck = {
                     })
                 }
             }
+        },
+        drawSingleCard() {
+            return this.deck.pop();
         }
 }
